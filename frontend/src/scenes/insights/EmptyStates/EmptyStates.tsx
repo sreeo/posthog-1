@@ -264,7 +264,7 @@ export function SavedInsightsEmptyState(): JSX.Element {
                 <h2 className="empty-state__title">
                     {usingFilters
                         ? searchString
-                            ? title.replace('$CONDITION', `matching "${searchString}"`)
+                            ? title.replace('$CONDITION', `"${searchString}"`)
                             : title.replace('$CONDITION', `matching these filters`)
                         : title.replace('$CONDITION', 'for this project')}
                 </h2>
